@@ -1,0 +1,8 @@
+{
+  "board": "kitb-10.1-rev3",
+  "layout": "ota-32m-v1",
+  "version": "0.1.0-798abeba",
+  "size": 1722992,
+  "sha256": "77c2c4079775b9c7847e51a6cd15804b661266ba8d32ce6683040daeeff1d2b9",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.1.0-798abeba/dash-kitb-ota.bin"
+}
