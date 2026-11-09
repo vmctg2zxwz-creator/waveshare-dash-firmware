@@ -1,8 +1,8 @@
 {
   "board": "kitb-10.1-rev3",
   "layout": "ota-32m-v1",
-  "version": "0.1.0-f92e85a5",
-  "size": 3695344,
-  "sha256": "9da4f1af7bc3a3033dec8fd29b497cc04cf6a0802e2b5f2f4c529515a773836c",
-  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.1.0-f92e85a5/dash-kitb-ota.bin"
+  "version": "0.1.0-87ef4d4d",
+  "size": 3699904,
+  "sha256": "0b9bc0302c867b76ee956575de75f2997c17ff85b744410ca267d5ac4bbfefa5",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.1.0-87ef4d4d/dash-kitb-ota.bin"
 }
