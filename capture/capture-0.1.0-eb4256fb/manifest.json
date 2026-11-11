@@ -1,0 +1,13 @@
+{
+  "board": "lafvin-esp32-wroom32e",
+  "version": "capture-0.1.0-eb4256fb",
+  "mode": "listen-only",
+  "flash_offset": "0x0000",
+  "rx_gpio": 26,
+  "ctx_wiring": "3V3",
+  "serial_baud": 1000000,
+  "protocol": "GVRET",
+  "size": 247328,
+  "sha256": "faf7c01df3a0af4a709a6ce26ea1cf725a5edb4030ccef51be4313c228347bed",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/capture/capture-0.1.0-eb4256fb/esp32-can-capture-usb.bin"
+}
