@@ -1,0 +1,17 @@
+{
+  "board": "waveshare-esp32-s3-touch-lcd-7",
+  "version": "s3lab-0.1.0-3b16ea0d",
+  "resolution": [
+    800,
+    480
+  ],
+  "mode": "listen-only",
+  "flash_offset": "0x0000",
+  "tx_gpio": 20,
+  "rx_gpio": 19,
+  "usb_port": "UART",
+  "serial_baud": 1000000,
+  "size": 715024,
+  "sha256": "a6c47d07c862fbb451f21ec767031130fdcc53536550f82f19ce5875439b6b73",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/s3-can-lab/s3lab-0.1.0-3b16ea0d/s3-7-can-lab-usb.bin"
+}
