@@ -1,7 +1,7 @@
 {
   "board": "waveshare-esp32-s3-touch-lcd-7",
   "layout": "s3-7-ota-8m-v1",
-  "version": "s3lab-0.2.0-02edcfdf",
+  "version": "s3lab-0.2.1-e49c9457",
   "resolution": [
     800,
     480
@@ -13,10 +13,10 @@
   "rx_gpio": 19,
   "usb_port": "UART",
   "serial_baud": 1000000,
-  "size": 1430864,
-  "sha256": "cce2fe5392801722ca7767fbb57af8480071bf1b94b3e74906518ecf5d9a114e",
-  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/s3-can-lab/s3lab-0.2.0-02edcfdf/s3-7-can-lab-ota.bin",
-  "usb_size": 1561936,
-  "usb_sha256": "3f4dd86a1ebf289cb5288ea509c016e214c57efcde737e14ed23b4f05c98f990",
-  "usb_url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/s3-can-lab/s3lab-0.2.0-02edcfdf/s3-7-can-lab-usb.bin"
+  "size": 1383824,
+  "sha256": "2123f162d4d9bb74b62aa362e6b88365426bb6b1dbedb25636c2e1ef3cc95b01",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/s3-can-lab/s3lab-0.2.1-e49c9457/s3-7-can-lab-ota.bin",
+  "usb_size": 1514896,
+  "usb_sha256": "f317ed1b9562e7c2520307bb707f05a50431790d699476e3070aab903e2f70b3",
+  "usb_url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/s3-can-lab/s3lab-0.2.1-e49c9457/s3-7-can-lab-usb.bin"
 }
