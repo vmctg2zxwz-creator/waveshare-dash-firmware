@@ -1,0 +1,4 @@
+d9bde65ccbc90b30d3af24a847fb2eea3d82400aeec8b484ece3b4e0a07654e6  s3-7-can-lab-usb.bin
+e3096b1ae9e736aeb5d2d74e17df75d0a1f1806c9051d231f874b9d64b43dc52  s3-7-can-lab-ota.bin
+fd0613dc2cc4f1882f552c807baa78d4acd7c1b7dff25abf1e0867b77ef71b62  manifest.json
+219af44122b134a7809ecccf6f3b189d1abda5a3830da72f6e90554a49ab45bb  README.txt
