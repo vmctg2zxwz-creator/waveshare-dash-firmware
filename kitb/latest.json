@@ -1,8 +1,21 @@
 {
   "board": "kitb-10.1-rev3",
   "layout": "ota-32m-v1",
-  "version": "0.1.0-c570299d",
-  "size": 4667088,
-  "sha256": "f2024c4028986d42e604a5f075510597ec59f403aa2a4aa82813fec800410cf6",
-  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.1.0-c570299d/dash-kitb-ota.bin"
+  "version": "0.2.0-01b5e955",
+  "mode": "pq35-comparison-listen-only",
+  "bitrate": 500000,
+  "tx_gpio": 2,
+  "rx_gpio": 3,
+  "vehicle_verified": false,
+  "fuel_phase2": true,
+  "signals": [
+    "rpm",
+    "speed_kmh",
+    "coolant_c",
+    "iat_c",
+    "battery_v"
+  ],
+  "size": 4689440,
+  "sha256": "c2f18a3364c00d29070eb07a4673728ed105d10a3e9c5bb13028fb1e9d026719",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.2.0-01b5e955/dash-kitb-ota.bin"
 }
