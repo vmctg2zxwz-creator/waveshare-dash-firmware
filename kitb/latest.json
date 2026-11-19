@@ -1,7 +1,7 @@
 {
   "board": "kitb-10.1-rev3",
   "layout": "ota-32m-v1",
-  "version": "0.4.0-e0a256ea",
+  "version": "0.4.2-0268038",
   "mode": "pq35-kwp2000-tp20",
   "bitrate": 500000,
   "tx_gpio": 2,
@@ -27,6 +27,15 @@
     "115.4"
   ],
   "oil_sensor_fitted": false,
+  "can_receive_default": true,
+  "can_pause_control": true,
+  "user_verified_on_s3": [
+    "rpm",
+    "speed_kmh",
+    "coolant_c",
+    "iat_c"
+  ],
+  "can_error_protection": "latched-high-error-rate",
   "signals": [
     "rpm",
     "speed_kmh",
@@ -34,7 +43,7 @@
     "iat_c",
     "battery_v"
   ],
-  "size": 4710896,
-  "sha256": "4c52499c220325e218b12839cb381607e1ddf7ed2f2b17ae7ec9e9c69e156f2b",
-  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.4.0-e0a256ea/dash-kitb-ota.bin"
+  "size": 4714608,
+  "sha256": "4667358a3ad486f52f0ab890f19daf272b811e79f04779f5b946cf380af8ce1d",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.4.2-0268038/dash-kitb-ota.bin"
 }
