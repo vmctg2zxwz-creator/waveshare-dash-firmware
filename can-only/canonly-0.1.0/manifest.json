@@ -1,0 +1,20 @@
+{
+  "board": "kitb-10.1-rev3",
+  "layout": "ota-32m-v1",
+  "version": "canonly-0.1.0",
+  "project": "waveshare_dash_kitb",
+  "mode": "listen-only-headless",
+  "bitrate": 500000,
+  "tx_gpio": 2,
+  "rx_gpio": 3,
+  "serial_baud": 115200,
+  "display": "off",
+  "wifi": false,
+  "runtime_ota": false,
+  "usb_flash_offset": "0x2000",
+  "app_size": 222016,
+  "app_sha256": "46d52cf567511de957a6d04486d3ade90b9f504cf56637ccdaf014f3276117a3",
+  "usb_size": 344896,
+  "usb_sha256": "b24e51d87b43c7bd7e5d289ba5f48664697ef32d231d11624ed9e55277be1adc",
+  "hardware_tested": false
+}

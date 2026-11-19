@@ -1,0 +1,61 @@
+Firmware: canonly-0.1.0
+
+# KIT-B / P4: μόνο CAN, χωρίς οθόνη
+
+Ξεχωριστό ελάχιστο project για τη συγκεκριμένη ESP32-P4-WIFI6-KIT-B,
+rev3.x / 32MB. Όπως ζήτησε ο χρήστης, δεν αρχικοποιούνται panel, touch,
+DSI, LVGL, PSRAM, C6, Wi-Fi ή διαγνωστική συνεδρία ECU.
+Το GPIO54 κρατά το C6 σε reset (EN=0), βάσει της υπάρχουσας ρύθμισης
+SDIO του KIT-B, ακόμη και μετά από warm reset του προηγούμενου firmware.
+
+- TJA1051 στην υπάρχουσα σύνδεση: TX GPIO2 / RX GPIO3 / 3V3 / GND.
+- 500kbit/s, accept-all, αποκλειστικά listen-only, TX queue0.
+- Μόνο το main task: RX queue1024, batches<=64 και yield σε κάθε κύκλο.
+- Χωρίς τη latched προστασία που άφηνε την 0.4.2 μόνιμα σε παύση.
+- Μία μικρή αναφορά UART/USB στα **115200 baud ανά δευτερόλεπτο**.
+  Περιλαμβάνει συνολικό RX, νέα frames, bus errors, missed/overrun,
+  τελευταίο raw frame και τελευταία 280/288/380/1A0 με ηλικία/count.
+  Δεν προσποιείται πλήρες χρονικό log ούτε αποκωδικοποιεί μετρήσεις.
+- Η μοναδική εντολή προς το panel είναι **backlight OFF**: I2C SDA7/SCL8,
+  device0x45, register0x96=0, ακριβώς όπως στο επιβεβαιωμένο BSP.
+  Αποτυχία αυτής της εντολής αναφέρεται στο USB και δεν εμποδίζει το CAN.
+
+Η οθόνη πρέπει να παραμένει μαύρη. Το αποτέλεσμα το βλέπουμε στο USB,
+όχι πάνω στο panel. Η δοκιμή απομονώνει το CAN από την εφαρμογή οθόνης·
+δεν έχει ακόμη δοκιμαστεί φυσικά και δεν προεξοφλεί λύση των errors.
+
+## Εγκατάσταση
+
+Από Chrome/Edge στο PC: https://espressif.github.io/esptool-js/
+
+1. Συνδέεις το υπάρχον USB/UART της P4, Connect, COM της P4, baud115200.
+2. Program: **kitb-can-only-usb.bin**, **Flash Address 0x2000**.
+   Flash mode/frequency/size: keep, Erase all: κλειστό.
+3. Μετά την ολοκλήρωση RESET, αποσύνδεση του Program, και **Console →
+   Start**, ίδια COM, **115200**. Αν ανοίξεις το Console μετά την
+   εκκίνηση, οι αναφορές συνεχίζονται ανά δευτερόλεπτο.
+
+Εναλλακτικά, το **kitb-can-only-ota.bin** μπορεί να φορτωθεί από την
+υπάρχουσα τοπική σελίδα της 0.4.2 πριν εγκατασταθεί το headless πρόγραμμα.
+Διατηρεί το ίδιο project ID/partition layout γι' αυτήν τη μετάβαση.
+Μετά την εγκατάσταση δεν υπάρχει Wi-Fi updater στο headless πρόγραμμα.
+
+Η επιστροφή στο καντράν γίνεται από USB με το κανονικό dash-kitb-usb.bin
+της επιλεγμένης έκδοσης στη 0x2000. Τα merged USB installers αντικαθιστούν
+και την περιοχή NVS· πιθανόν να χρειαστεί ξανά η ρύθμιση Wi-Fi κατά την
+επιστροφή. Η εγκατάσταση μέσω του υπάρχοντος OTA διατηρεί NVS.
+
+Δεν αλλάζει το κανονικό δημόσιο OTA κανάλι της 10.1″ ή της 7″.
+Δημοσιεύονται χωριστά μόνο το headless binary/installer και οι οδηγίες.
+
+## Build
+
+ESP-IDF5.5.3, από το project:
+`idf.py -B ../../build/kitb-can-only build`.
+Προαιρετική έκδοση με μεταβλητή `KITB_CAN_ONLY_VERSION`.
+Δεν υπάρχουν managed dependencies ή λήψεις βιβλιοθηκών οθόνης.
+
+Έλεγχος λογισμικού: το πραγματικό main loop ελέγχεται με λήψη >10000
+frames, malformed DLC, 1000000 bus errors χωρίς διακοπή λήψης,
+αποτυχία CAN init και αποτυχία εντολής backlight. Ελέγχονται επίσης
+το τελικό ELF/SDK (χωρίς GUI/radio), τα image offsets και τα checksums.
