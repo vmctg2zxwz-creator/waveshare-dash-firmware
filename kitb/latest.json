@@ -1,7 +1,7 @@
 {
   "board": "kitb-10.1-rev3",
   "layout": "ota-32m-v1",
-  "version": "0.4.4-sjw4",
+  "version": "0.4.5-menu",
   "mode": "pq35-kwp2000-tp20",
   "bitrate": 500000,
   "tx_gpio": 2,
@@ -20,6 +20,7 @@
   "pages": 2,
   "diagnostic_fields": 24,
   "ecu_reads_default": false,
+  "can_autel_menu": false,
   "ecu_protocol": "vwtp2.0-kwp2000",
   "ecu_setup_id": 512,
   "ecu_logical_address": 1,
@@ -52,7 +53,7 @@
     "iat_c",
     "battery_v"
   ],
-  "size": 4714720,
-  "sha256": "983efc50551caf3a58030f6ed5f31d78d4eb30aa936cc99acf7db888eb0cfb4e",
-  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.4.4-sjw4/dash-kitb-ota.bin"
+  "size": 4711232,
+  "sha256": "90550f4c56e19616460f07c96aec3e9fca4c9edfc774cf70f6545981fcc9aada",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.4.5-menu/dash-kitb-ota.bin"
 }
