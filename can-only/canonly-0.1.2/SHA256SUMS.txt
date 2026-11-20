@@ -1,0 +1,4 @@
+278aaa339f13d7629bb51bc3a412d516afbd70ab3021c34548fc5cd5453c8791  kitb-can-only-usb.bin
+af483e0fc906328c2650b1c6db3fbaa46f610ae8f9f5fc51100af77fd97bde41  kitb-can-only-ota.bin
+3995cab70f4d97cfd763af4422b34653fb02d4c07eced77a021c8d21b8ad12c7  manifest.json
+b745c53b6bea19f4d01c00c0f981334df080b04f9b74654aff7daf79eb4fc6d9  README.txt
