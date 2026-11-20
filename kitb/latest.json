@@ -1,7 +1,7 @@
 {
   "board": "kitb-10.1-rev3",
   "layout": "ota-32m-v1",
-  "version": "0.4.3-can65",
+  "version": "0.4.4-sjw4",
   "mode": "pq35-kwp2000-tp20",
   "bitrate": 500000,
   "tx_gpio": 2,
@@ -9,11 +9,12 @@
   "sample_point_percent": 65,
   "tseg1": 12,
   "tseg2": 7,
-  "sjw": 1,
+  "sjw": 4,
   "quanta_resolution_hz": 10000000,
   "triple_sampling": false,
-  "timing_verified_headless": true,
+  "timing_verified_headless": false,
   "timing_verified_with_display": false,
+  "timing_comparison": "sp65-sjw1-to-sjw4",
   "vehicle_verified": false,
   "fuel_phase2": true,
   "pages": 2,
@@ -52,6 +53,6 @@
     "battery_v"
   ],
   "size": 4714720,
-  "sha256": "5017ebc6e563d50ea1c8ac4655292b8e8e00183ce7953b40dfafde1da169a0d8",
-  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.4.3-can65/dash-kitb-ota.bin"
+  "sha256": "983efc50551caf3a58030f6ed5f31d78d4eb30aa936cc99acf7db888eb0cfb4e",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.4.4-sjw4/dash-kitb-ota.bin"
 }
