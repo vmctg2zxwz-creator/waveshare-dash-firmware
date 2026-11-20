@@ -1,0 +1,38 @@
+{
+  "board": "kitb-10.1-rev3",
+  "layout": "ota-32m-v1",
+  "version": "canonly-0.2.0-auto",
+  "project": "waveshare_dash_kitb",
+  "mode": "listen-only-headless-autotune",
+  "bitrate": 500000,
+  "tx_gpio": 2,
+  "rx_gpio": 3,
+  "serial_baud": 115200,
+  "sample_points_percent": [
+    60,
+    65,
+    70,
+    75,
+    80,
+    85
+  ],
+  "sjw_range": [
+    1,
+    4
+  ],
+  "profile_count": 23,
+  "trial_ms": 3000,
+  "settle_ms": 500,
+  "verify_ms": 30000,
+  "save_only_verified_zero_error_profile": true,
+  "quanta_resolution_hz": 10000000,
+  "display": "off",
+  "wifi": false,
+  "runtime_ota": false,
+  "usb_flash_offset": "0x2000",
+  "app_size": 248912,
+  "app_sha256": "bdd6b42a4065c5f0b5ab3715a544cd78a531c30fdd0acfe998a6225e0d3eccd5",
+  "usb_size": 371792,
+  "usb_sha256": "2d8c8df9754f4cd6a6d7a8de3c28177910a9a89654de5b010d733d2838ffb2e0",
+  "hardware_tested": false
+}
