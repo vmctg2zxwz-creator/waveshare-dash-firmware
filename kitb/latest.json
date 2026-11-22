@@ -1,7 +1,7 @@
 {
   "board": "kitb-10.1-rev3",
   "layout": "ota-32m-v1",
-  "version": "0.4.5-menu",
+  "version": "0.5.0-manual",
   "mode": "pq35-kwp2000-tp20",
   "bitrate": 500000,
   "tx_gpio": 2,
@@ -18,7 +18,7 @@
   "vehicle_verified": false,
   "fuel_phase2": true,
   "pages": 2,
-  "diagnostic_fields": 24,
+  "diagnostic_fields": 5,
   "ecu_reads_default": false,
   "can_autel_menu": false,
   "ecu_protocol": "vwtp2.0-kwp2000",
@@ -28,14 +28,26 @@
   "ecu_transmit_id": "negotiated",
   "ecu_max_requests_per_second": 5,
   "measuring_blocks": [
-    "001.3",
-    "004.2",
-    "031.1",
-    "053.4",
-    "103.1",
+    "115.4",
     "106.1",
-    "115.4"
+    "103.1",
+    "004.2",
+    "031.1"
   ],
+  "ecu_poll_profiles": {
+    "dashboard": [],
+    "diagnostics": [
+      "115.4",
+      "106.1",
+      "103.1",
+      "004.2",
+      "031.1"
+    ]
+  },
+  "ecu_stop_on_page_exit": true,
+  "ecu_requires_manual_restart": true,
+  "ecu_diagnostics_only": true,
+  "boost_reference": "absolute",
   "oil_sensor_fitted": false,
   "can_receive_default": true,
   "can_pause_control": true,
@@ -53,7 +65,7 @@
     "iat_c",
     "battery_v"
   ],
-  "size": 4711232,
-  "sha256": "90550f4c56e19616460f07c96aec3e9fca4c9edfc774cf70f6545981fcc9aada",
-  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.4.5-menu/dash-kitb-ota.bin"
+  "size": 4808608,
+  "sha256": "a40c69a891fbe041f9e9a1af0a7e7308352dead14b644871664df98708f41665",
+  "url": "https://raw.githubusercontent.com/vmctg2zxwz-creator/waveshare-dash-firmware/main/releases/0.5.0-manual/dash-kitb-ota.bin"
 }
